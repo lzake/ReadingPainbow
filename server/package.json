@@ -1,0 +1,27 @@
+{
+  "name": "greads",
+  "version": "1.0.0",
+  "description": "greads",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzake/galvanize-reads-instructions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "handlebars": "^4.0.10",
+    "knex": "^0.13.0",
+    "node": "^8.3.0",
+    "pg": "^7.3.0"
+  }
+}

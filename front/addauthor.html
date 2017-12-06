@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Reading PAINbow</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="./Favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/addauthor.js"></script>
+    <link rel="stylesheet" href="css/skel-noscript.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-desktop.css" />
+</head>
+
+<body class="homepage">
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <!-- Logo -->
+            <div id="logo">
+                <img class="logo" src="./images/books.png" alt="bookslogo">
+                <h1><a href="index.html">Reading <span class='red'>PAIN</span>bow</a></h1>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div id="page">
+        <div class="leftdiv">
+            <div class="leftnav">
+                <div><a href="authors.html"><img src="./images/authorstab.png" alt="" style="height:240px;padding-left:20px;padding-bottom:20px"></a></div>
+                <div><a href="books.html"><img src="./images/bookstab.png" alt="" style="height:240px;padding-left:20px;padding-bottom:20px;box-shadow: 10px 10px 5px grey;"></a></div>
+            </div>
+        </div>
+    </div>
+    <h1 class="topic">Add an Author!</h1><br>
+    <div class="mainload">
+
+        <form class="form" action="./addauthor.js" method="post">
+            <label for="authorFirstName">Author First Name</label><br>
+            <input type="text" name="authorFirstName" value="" id="authorFirstName" placeholder=" ... "><br>
+            <label for="authorLastName">Author Last Name</label><br>
+            <input type="text" name="authorLastName" value="" id="authorLastName" placeholder=" ... "><br>
+            <label for="portraitUrl">Portrait URL</label><br>
+            <input type="text" name="portraitUrl" value="" id="portraitUrl" placeholder=" ... "><br>
+            <label for="bio">Biography</label><br>
+            <textarea name="bio" value="" id="bio" cols="60" rows="5" placeholder="Enter biography ... "></textarea><br>
+            
+            <br><br>
+            <input type="submit" value="ADD AUTHOR" class="save bottombitch button">
+            <p class="save-status"></p>
+        </form>
+    </div>
+    </div>
+
+
+    <!-- Copyright -->
+    <div id="copyright">
+        Copyright &copy; Zachariahlowe.com, yo.
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Reading PAINbow</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="./Favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/addbook.js"></script>
+    <link rel="stylesheet" href="css/skel-noscript.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-desktop.css" />
+</head>
+
+<body class="homepage">
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <!-- Logo -->
+            <div id="logo">
+                <img class="logo" src="./images/books.png" alt="bookslogo">
+                <h1><a href="index.html">Reading <span class='red'>PAIN</span>bow</a></h1>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div id="page">
+        <div class="leftdiv">
+            <div class="leftnav">
+                <div><a href="authors.html"><img src="./images/authorstab.png" alt="" style="height:240px;padding-left:20px;padding-bottom:20px"></a></div>
+                <div><a href="books.html"><img src="./images/bookstab.png" alt="" style="height:240px;padding-left:20px;padding-bottom:20px;box-shadow: 10px 10px 5px grey;"></a></div>
+            </div>
+        </div>
+    </div>
+    <h1 class="topic"><strong>Add your favorite book!</strong></h1><br>
+    <div class="mainload">
+        <div>
+            <div>
+                <form class="form" action="./editbook.js" method="post">
+                    <label for="booktitle">Book Title</label><br>
+                    <input type="text" name="booktitle" value="" id="booktitle" placeholder=" ... "><br>
+                    <label for="genre">Genre</label><br>
+                    <input type="text" name="genre" value="" id="genre" placeholder=" ... "><br>
+                    <label for="coverurl">Cover Image URL</label><br>
+                    <input type="text" name="coverurl" value="" id="coverurl" placeholder=" ... "><br>
+                    <label for="description">Description</label><br>
+                    <textarea name="description" value="" id="description" cols="60" rows="5" placeholder="Enter description ... "></textarea><br>
+                    <label for="pairs">Authors</label></br>
+                    <div class="form-section">
+                        <div class="fleft">
+                            <select id="list" multiple></select>
+                        </div>
+                        <div class="fright">
+                            <button id="deleteButton" onclick="deleteEntry()">Delete</button>
+                        </div>
+                    </div>
+
+                    <select name="pickauthor" class="pincode">
+                <option value="blank" disabled selected>Select an Author</option>
+              </select>
+                    <button id='add' type="button">Add</button>
+                    <br><br>
+                    <input type="submit" value="ADD BOOK" class="save bottombitch button">
+                    <p class="save-status"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+    <div id="copyright">
+        Copyright &copy; Zachariahlowe.com, yo.
+    </div>
+    </div>
+</body>
+
+</html>
